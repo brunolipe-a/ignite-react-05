@@ -1,1 +1,45 @@
-// TODO
+.postList {
+  list-style: none;
+
+  li {
+    & + li {
+      margin-top: 3rem;
+    }
+
+    a {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 3rem;
+      letter-spacing: 0.5px;
+      color: var(--white);
+      transition: color 0.2s;
+
+      &:hover {
+        color: var(--pink-500);
+      }
+    }
+
+    p {
+      font-size: 18px;
+      color: var(--gray-300);
+    }
+  }
+}
+
+.loadPostButton {
+  color: var(--pink-500);
+  font-weight: bold;
+  background: none;
+  border: none;
+
+  align-self: flex-start;
+
+  margin-top: 4rem;
+  font-size: 18px;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
